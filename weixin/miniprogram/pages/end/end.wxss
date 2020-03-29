@@ -1,0 +1,7 @@
+button{
+  width:150rpx;
+  margin: 100rpx
+}
+video{
+  width: 100%
+}

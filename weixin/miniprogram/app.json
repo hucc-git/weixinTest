@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/openapi/openapi",
+    "pages/openapi/serverapi/serverapi",
+    "pages/openapi/callback/callback",
+    "pages/openapi/cloudid/cloudid",
+    "pages/im/im",
+    "pages/im/room/room",
+    
+    "template/template",
+    
+    "pages/logs/logs",
+    "pages/end/end",
+    "pages/message/message"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/start/start",
+        "text": "信息录入",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png"
+      },
+      {
+        "pagePath": "pages/end/end",
+        "text": "信息查询",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

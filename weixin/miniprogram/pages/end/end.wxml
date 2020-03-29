@@ -1,0 +1,35 @@
+<video src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" autoplay="true" loop="true"></video>
+<view>
+  <label>查询条件</label>
+  <view>
+    <form bindsubmit="formSubmit">
+      姓名：
+      <input type="text" name="name"></input>
+      <button size="mini" type="primary" form-type="submit">查询</button>
+      <button size="mini" type="primary" form-type="reset">重置</button>
+    </form>
+  </view>
+  查询结果:
+  <rich-text nodes="{{nodes}}" >
+  
+  </rich-text>
+
+<view class="section">
+  <view class="section__title">省市区选择器</view>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
+  <view wx:for="{{result}}" wx:key="{{item._id}}">{{item.name}}+{{item.age}}+{{item.sex}}</view>
+</view>
+<scroll-view scroll-y="true">
+<view>
+<button type="primary" bindtap="upload">上传</button>
+<button type="primary" bindtap="download">下载</button>
+<view>预览</view>
+<image mode="widthFix" src="{{src}}"></image>
+</view>
+</scroll-view>
+

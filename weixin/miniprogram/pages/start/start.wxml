@@ -1,0 +1,39 @@
+<view>
+  <swiper circular autoplay indicator-dots>
+    <swiper-item>
+      <navigator url="../index/index" open-type="navigate">
+        <image src="../../image/001.jpg"></image>
+      </navigator>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/002.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../image/003.jpg"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<view>
+</view>
+<view>
+  <form bindsubmit="formSubmit">
+  <view class="fromClass"><label>姓名：</label><input name="name" type="text"></input>
+  </view>
+  <view class="fromClass"><label>年齡：</label><input name="age" type="number"></input>
+  </view>
+  <view class="fromClass"><label>性別：</label><input name="sex" type="text"></input>
+  </view>
+  <view class="fromClass"><label>爱好：</label><checkbox-group bindchange="checkboxChange" name="habbit">
+      <checkbox value="看书">看书</checkbox>
+      <checkbox value="唱歌">唱歌</checkbox>
+      <checkbox value="跳舞">跳舞</checkbox>
+    </checkbox-group>
+  </view>
+    
+    
+    
+    
+    <button size="mini" type="primary" form-type="submit">提交</button>
+    <button size="mini" type="primary" form-type="reset">重置</button>
+  </form>
+</view>

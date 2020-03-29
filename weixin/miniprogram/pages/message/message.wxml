@@ -1,0 +1,14 @@
+
+<view><form>
+你的名字：<input value="{{name}}"/>
+你的年齡：<input value="{{age}}"/>
+你的爱好：<input value="{{habbit}}"/>
+</form>
+<input></input>
+<button  type="primary" bindtap="getdata">提交</button>
+<button  type="primary" bindtap="insertdata">插入</button>
+<button  type="primary" bindtap="updatedata">更新</button>
+<button  type="primary" bindtap="deletedata">删除</button>
+{{getdata.id}}+{{getdata.name}}+{{getdata.age}}
+</view>
+

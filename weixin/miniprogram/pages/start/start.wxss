@@ -1,0 +1,21 @@
+
+image{
+  width: 100%;
+}
+
+button{
+  width:150rpx;
+  margin: 100rpx
+}
+input{
+  border: 1rpx solid #000;
+ 
+  /* border-radius: 5rpx; */
+  
+  
+}
+.fromClass{
+  margin: 10rpx;
+  padding: 5rpx;
+  
+}
